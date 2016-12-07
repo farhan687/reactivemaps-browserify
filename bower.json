@@ -1,0 +1,14 @@
+{
+	"name": "ReactiveMapSample",
+	"description": "",
+	"main": "main.js",
+	"authors": [
+		"Farhan Chauhan <farhan687@gmail.com>"
+	],
+	"license": "ISC",
+	"homepage": "https://github.com/appbaseio/reactive-maps",
+	"private": true,
+	"dependencies": {
+		"materialize": "^0.97.7"
+	}
+}
