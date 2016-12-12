@@ -4,13 +4,12 @@ var concat = require('gulp-concat');
 var files = {
 	css: {
 		vendor: [
-			'node_modules/reactive-maps/dist/css/vendor.min.css'
+			'node_modules/sensor-js/dist/css/vendor.min.css'
 		]
 	},
 	js: {
 		vendor: [
-			'node_modules/appbase-js/browser/appbase.js',
-			'node_modules/reactive-maps/dist/js/vendor.min.js'
+			'node_modules/sensor-js/dist/js/vendor.min.js'
 		]
 	}
 };

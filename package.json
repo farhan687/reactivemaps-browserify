@@ -9,7 +9,8 @@
   "dependencies": {
     "babelify": "^7.3.0",
     "browserify": "^13.1.1",
-    "reactive-maps": "0.0.13"
+    "reactive-maps": "0.0.14",
+    "sensor-js": "0.0.7"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
