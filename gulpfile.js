@@ -4,12 +4,7 @@ var concat = require('gulp-concat');
 var files = {
 	css: {
 		vendor: [
-			'node_modules/sensor-js/dist/css/vendor.min.css'
-		]
-	},
-	js: {
-		vendor: [
-			'node_modules/sensor-js/dist/js/vendor.min.js'
+			'node_modules/@appbaseio/reactivemaps/dist/css/style.min.css'
 		]
 	}
 };
@@ -27,8 +22,7 @@ gulp.task('vendorjs', function() {
 });
 
 gulp.task('compact', [
-	'vendorcss',
-	'vendorjs'
+	'vendorcss'
 ]);
 
 gulp.task('default', ['compact']);
