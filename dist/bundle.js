@@ -119,7 +119,7 @@ var Main = function (_Component) {
 							size: 100,
 							showSearchAsMove: true,
 							showMapStyles: true,
-							title: 'Meetupblast',
+							title: 'ReactiveMap',
 							actuate: {
 								CitySensor: { "operation": "must" },
 								TopicSensor: { "operation": "must" }
