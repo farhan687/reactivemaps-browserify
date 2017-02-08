@@ -9,20 +9,23 @@ var files = {
 	}
 };
 
+
+gulp.task('moveFonts', function() {
+	return gulp.src([
+			'node_modules/@appbaseio/reactivemaps/dist/fonts/**/*'
+		])
+		.pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task('vendorcss', function() {
 	return gulp.src(files.css.vendor)
 		.pipe(concat('vendor.min.css'))
 		.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('vendorjs', function() {
-	return gulp.src(files.js.vendor)
-		.pipe(concat('vendor.min.js'))
-		.pipe(gulp.dest('dist/js'));
-});
-
 gulp.task('compact', [
-	'vendorcss'
+	'vendorcss',
+	'moveFonts'
 ]);
 
 gulp.task('default', ['compact']);
